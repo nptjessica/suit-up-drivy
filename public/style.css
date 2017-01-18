@@ -1,8 +1,22 @@
 
 html{
-    background-image: url("wallpaper.jpg");
-    background-repeat: no-repeat;
+    /*shorthand property "background"
+    To shorten the code, it is also possible to specify all the background properties in one single property
+    When using the shorthand property the order of the property values is:
+    background-color / background-image / background-repeat / background-attachment / background-position
+    It does not matter if one of the property values is missing, as long as the other ones are in this order.
+    */
+    background: url(wallpaper.jpg) no-repeat center fixed;
+    background-size: cover;
 
+
+/*  same as
+    background-image: url('wallpaper.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+*/
 }
 
 body{
@@ -14,42 +28,58 @@ h1{
     background-color: white;
 }
 
-.car{
-    border-radius: 20px;
-    width: 450px;
-    padding: 25px;
+p{
+    color: white;
 }
 
 label{
-    color:deeppink;
+    font-family: calibri;/*font size for text*/
+    font-size: 17px; /*font size of text*/
+    font-weight: bold; /*bold = gras*/
+    color: deeppink;
+    text-align: center;
+    width: 170px;
+    height: 30px;
+    background-color: pink;
+    border: 2px solid deeppink;
+    border-radius: 20px; /*corners*/
     display: inline-block;
-    text-align: right;
-
-    width:200px;
-    font-family:AR CENA;
-    font-size:20px;
-    margin-top:10px;
-
+    margin-top: 5px;
 }
 
 input{
-    border: 2px solid darkturquoise;
-    vertical-align: top;
+    text-align: center;
     width: 150px;
     height: 30px;
-    border-radius: 5px;
     background-color: lightblue;
-    margin-left: 20px;
-    margin-top: 10px;
+    border: 2px solid darkturquoise;
+    border-radius: 20px; /*corners*/
+    vertical-align: top;
+    margin-left: 20px; /*between labels and inputs*/
+    margin-top: 5px; /*between inputs*/
 }
 
 button{
-    margin-top: 1em;
+    font-family: calibri;/*font size for text*/
+    font-size: 17px; /*font size of text*/
+    font-weight: bold; /*bold = gras*/
+    color: darkgreen;
+    width: 170px;
+    height: 40px;
+    background-color: lightgreen;
+    border: 2px solid limegreen;
+    border-radius: 20px;
+    margin-top: 3em;
+    margin-bottom: 3em;
+
 }
 
 #actors{
+    font-family: calibri;/*font size for text*/
+    font-size: 17px; /*font size of text*/
     color: white;
-    border: 2px solid violetred;
-    border-radius: 5px;
-    background-color:palevioletred;
+    width: 50%;
+    background-color: #D19275;
+    border-radius: 20px;
+    margin: 0 auto;
 }
