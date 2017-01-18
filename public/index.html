@@ -1,22 +1,40 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <link rel="stylesheet" href="style.css">
     <title>CSS/HTML Workshop with Drivy</title>
   </head>
   <body>
+    <h1>Form of Drivy service</h1>
     <div id="car">
-      <input class="model" type="text" placeholder="Car model"/>
-      <input class="price-by-day" type="number" placeholder="Price by day"/>
-      <input class="price-by-km" type="number" placeholder="Price by km"/>
+      <label for="carModel">Car model</label>
+      <input class="model" id="carModel" type="text" placeholder="Car model"/>
+
+      <label for="priceDay">Price by day</label>
+      <input class="price-by-day" id="priceDay" type="number" placeholder="Price by day"/>
+
+      <label for="priceKm">Price by km</label>
+      <input class="price-by-km" id="priceKm" type="number" placeholder="Price by km"/>
     </div>
+
     <div id="rental">
+      <label for="priceKm">Rental begin data</label>
       <input class="begin" type="date" placeholder="Rental begin date"/>
+
+      <label for="priceKm">Rental end date</label>
       <input class="end" type="date" placeholder="Rental end date"/>
+
+      <label for="priceKm">Distance in km</label>
       <input class="distance" type="number" placeholder="Distance in km"/>
+
+      <label for="priceKm">Deductible option</label>
       <input class="option" type="checkbox" placeholder="Deductible option"/>
     </div>
+
     <button id="compute">Compute</button>
+
     <div id="actors"></div>
+
     <script id="template" type="x-tmpl-mustache">
       {{#actors}}
         <div class="actor">
