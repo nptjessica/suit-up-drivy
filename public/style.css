@@ -1,0 +1,55 @@
+
+html{
+    background-image: url("wallpaper.jpg");
+    background-repeat: no-repeat;
+
+}
+
+body{
+    text-align: center;
+}
+
+h1{
+    color:SkyBlue;
+    background-color: white;
+}
+
+.car{
+    border-radius: 20px;
+    width: 450px;
+    padding: 25px;
+}
+
+label{
+    color:deeppink;
+    display: inline-block;
+    text-align: right;
+
+    width:200px;
+    font-family:AR CENA;
+    font-size:20px;
+    margin-top:10px;
+
+}
+
+input{
+    border: 2px solid darkturquoise;
+    vertical-align: top;
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: lightblue;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+button{
+    margin-top: 1em;
+}
+
+#actors{
+    color: white;
+    border: 2px solid violetred;
+    border-radius: 5px;
+    background-color:palevioletred;
+}
